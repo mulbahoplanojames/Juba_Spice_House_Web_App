@@ -8,6 +8,7 @@ export default {
 				secondary: "#0f0f0f",
 				accent_light: "#f57319",
 				text_light: "#747474",
+				text_bold: "#262626",
 				yellow_accent_1: "#FCF300",
 				yellow_accent_2: "#ffcc00",
 				yellow_accent_3: "#ffc60a",

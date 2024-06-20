@@ -43,6 +43,7 @@ const Navbar = () => {
 							>
 								{navlink.label}
 							</Link>
+							
 						</li>
 					))}
 				</ul>
@@ -80,7 +81,7 @@ const Navbar = () => {
 			{/*//! Responsive menu for smaller devices */}
 			{isMenuOpen && (
 				<div>
-					<nav className='lg:bottom-auto bg-yellow_accent_2 fixed top-0 bottom-0 left-0 right-0 z-40'>
+					<nav className='lg:bottom-auto bg-yellow_accent_9 fixed top-0 bottom-0 left-0 right-0 z-40'>
 						{/* Close button for the menu */}
 						<div
 							className='max-lg:block fixed right-0 hidden px-8 py-4 cursor-pointer'
