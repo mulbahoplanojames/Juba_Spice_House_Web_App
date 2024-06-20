@@ -1,22 +1,22 @@
-// Importing the useContext hook from the React library. This hook allows us to access the context
-// provided by the StoreContext.
+/**
+ ** Importing the useContext hook from the React library. This hook allows us to access
+ ** the food_list array in the storeContext. We will use this array in the context
+ ** to display the food items.
+ */
 import { useContext } from "react";
 
 // Importing the storeContext from the StoreContext file. This context provides the food_list array
-// that we will be using to display the food items.
+// that i am  using to display the food items.
 import { storeContext } from "../../Context/StoreContext";
 
 // Importing the FoodCard component from the Food_Card folder. This component is responsible for
 // displaying each individual food item.
 import FoodCard from "../Food_Card/FoodCard";
 
-// Defining the FoodDisplay component. This component is responsible for displaying the top dishes
-// near the user.
 const FoodDsiplay = ({ category }) => {
 	// Using the useContext hook to access the food_list array from the storeContext.
 	const { food_list } = useContext(storeContext);
 
-	// Returning JSX that will be rendered on the screen.
 	return (
 		<>
 			{/* Adding a margin top of 8 pixels to create some space between this component and the 
