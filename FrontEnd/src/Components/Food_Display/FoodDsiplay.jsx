@@ -19,10 +19,7 @@ const FoodDsiplay = ({ category }) => {
 
 	return (
 		<>
-			{/* Adding a margin top of 8 pixels to create some space between this component and the 
-          previous component. */}
 			<div className='mt-8'>
-				{/* Adding a heading that says "Top dishes near you" */}
 				<h1 className='pb-6 text-2xl'>Top dishes near you</h1>
 
 				{/* Adding a grid layout with 4 columns for large devices, 2 columns for medium devices, 
@@ -31,18 +28,23 @@ const FoodDsiplay = ({ category }) => {
 				<div className='lg:grid-cols-4 md:grid-cols-2 place-items-center grid grid-cols-1 gap-6'>
 					{/* Mapping through the food_list array and rendering a FoodCard component for each item. 
               The key prop is set to the index of the item in the array. */}
-					{food_list.map((foodItem, i) => (
-						<FoodCard
-							key={i}
-							// Passing the name, image, price, description, and category of the food item as props
-							// to the FoodCard component.
-							name={foodItem.name}
-							image={foodItem.image}
-							price={foodItem.price}
-							description={foodItem.description}
-							cateory={foodItem.category}
-						/>
-					))}
+					{food_list.map((foodItem, i) => {
+						if (category === "All" || category === foodItem.category) {
+							return (
+								<FoodCard
+									key={i}
+									// Passing the name, image, price, description, and category of the food item as props
+									// to the FoodCard component.
+									id={foodItem._id}
+									name={foodItem.name}
+									image={foodItem.image}
+									price={foodItem.price}
+									description={foodItem.description}
+									cateory={foodItem.category}
+								/>
+							);
+						}
+					})}
 				</div>
 			</div>
 		</>

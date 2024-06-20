@@ -1,10 +1,11 @@
-import { useState } from "react";
+import { useContext } from "react";
 import { assets } from "../../data/assets";
+import { storeContext } from "../../Context/StoreContext";
 
 const FoodCard = (props) => {
-	const { name, image, price, description, cateory } = props;
+	const { id, name, image, price, description, cateory } = props;
 
-	const [itemCount, setItemCount] = useState(0);
+	const { cartItems, addToCart, removeFromCart } = useContext(storeContext);
 
 	return (
 		<>
@@ -14,12 +15,12 @@ const FoodCard = (props) => {
 					<img src={image} alt={`${cateory} image`} className='w-full' />
 					{
 						/* Add to cart button */
-						!itemCount ? (
+						!cartItems[id] ? (
 							<img
 								src={assets.add_icon_white}
 								alt='add_to_cart'
 								className='w-[35px] h-[35px] cursor-pointer absolute bottom-4 right-4'
-								onClick={() => setItemCount((prev) => prev + 1)}
+								onClick={() => addToCart(id)}
 							/>
 						) : (
 							// counter wripper
@@ -27,15 +28,15 @@ const FoodCard = (props) => {
 								<img
 									src={assets.remove_icon_red}
 									alt='remove_from_cart'
-									onClick={() => setItemCount((prev) => prev - 1)}
+									onClick={() => removeFromCart(id)}
 									className='w-[25px] h-[25px] cursor-pointer'
 								/>
-								<p>{itemCount}</p>
+								<p>{cartItems[id]}</p>
 								<img
 									src={assets.add_icon_green}
 									alt='added_to_cart'
 									className='w-[25px] h-[25px] cursor-pointer'
-									onClick={() => setItemCount((prev) => prev + 1)}
+									onClick={() => addToCart(id)}
 								/>
 							</div>
 						)
