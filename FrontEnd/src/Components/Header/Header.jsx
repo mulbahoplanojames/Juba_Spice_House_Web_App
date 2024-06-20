@@ -1,3 +1,5 @@
+import { assets } from "../../data/assets";
+
 const Header = () => {
 	return (
 		<>
@@ -9,12 +11,7 @@ const Header = () => {
 					<h1 className='lg:text-6xl text-5xl font-bold md:pr-20 pb-6'>
 						Place your favorite food order here
 					</h1>
-					<p className='text-lg pb-6'>
-						Choose from a diverse selection featuring a delectable array of
-						dishes crafted with finest ingredients from around the world. Our
-						mission is to satisfy your dinning experience, one delicious meal at
-						a time.
-					</p>
+					<p className='text-lg pb-6'>{assets.headerText}</p>
 					<button className='bg-primary text-text_light font-bold py-3 px-6 rounded-3xl hover:bg-yellow-200 transition-all duration-300'>
 						View Menu
 					</button>

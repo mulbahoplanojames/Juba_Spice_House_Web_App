@@ -60,6 +60,11 @@ import bag_icon from "/src/assets/bag_icon.png";
 import logout_icon from "/src/assets/logout_icon.png";
 import parcel_icon from "/src/assets/parcel_icon.png";
 
+const headerText = `Choose from a diverse selection featuring a delectable array of
+						dishes crafted with finest ingredients from around the world. Our
+						mission is to satisfy your dinning experience, one delicious meal at
+						a time.`;
+
 export const assets = {
 	logo,
 	basket_icon,
@@ -80,6 +85,7 @@ export const assets = {
 	logout_icon,
 	bag_icon,
 	parcel_icon,
+	headerText,
 };
 
 export const menu_list = [
