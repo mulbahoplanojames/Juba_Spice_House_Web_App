@@ -1,4 +1,14 @@
-import { menu_list } from "../../data/assets";
+/*
+ * This component is responsible for rendering the Explore Menu section
+ * It receives a "category" and a "setCategory" prop, which are used to manage
+ * the currently selected category
+ */
+
+/*
+ * The assets object contains a collection of image paths and header text.
+ * The menu_list array contains a collection of objects representing each menu option.
+ */
+import { assets, menu_list } from "../../data/assets";
 
 const ExploreMenu = (props) => {
 	const { category, setCategory } = props;
@@ -9,20 +19,19 @@ const ExploreMenu = (props) => {
 				<h1 className='text-[2rem] text-text_bold font-bold pb-3 '>
 					Explore our menu
 				</h1>
-				<p className='text-base pb-4 max-w-[50rem]'>
-					Choose from a diverse selection featuring a delectable array of dishes
-					crafted with finest ingredients from around the world. Our mission is
-					to satisfy your dinning experience, one delicious meal at a time.
-				</p>
+				{/* Header text */}
+				<p className='text-base pb-4 max-w-[50rem]'>{assets.headerText}</p>
+				{/* Menu items container */}
 				<div
 					className='flex justify-between items-center gap-6 text-center my-6 md:overflow-x-scroll overflow-x-scroll'
 					id='explore_menu_list'
 				>
 					{
-						/* Mapping through the menu items */
+						// Map through the menu items
 						menu_list.map((item, index) => (
 							<div
 								key={index}
+								// Handle click event to set the category
 								onClick={() =>
 									setCategory((prev) =>
 										prev === item.menu_name ? "All" : item.menu_name
@@ -30,6 +39,7 @@ const ExploreMenu = (props) => {
 								}
 								className=''
 							>
+								{/* Menu item image */}
 								<img
 									src={item.menu_image}
 									alt='menu images'
@@ -39,12 +49,15 @@ const ExploreMenu = (props) => {
 											: ""
 									}`}
 								/>
+								{/* Print the current category */}
 								{console.log(category)}
+								{/* Menu item name */}
 								<p className='mt-3 text-text_light'>{item.menu_name}</p>
 							</div>
 						))
 					}
 				</div>
+				{/* Horizontal line */}
 				<hr className='h-[2px] bg-[#e2e2e2] border-none my-3' />
 			</div>
 		</>

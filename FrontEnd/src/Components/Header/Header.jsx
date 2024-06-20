@@ -1,6 +1,9 @@
+// Import the assets object from the data/assets file
 import { assets } from "../../data/assets";
 
+// Define a functional component called Header
 const Header = () => {
+	// The Header component returns a JSX fragment containing a div element with a specific class and id
 	return (
 		<>
 			<div
@@ -21,4 +24,5 @@ const Header = () => {
 	);
 };
 
+// Export the Header component as the default export
 export default Header;
