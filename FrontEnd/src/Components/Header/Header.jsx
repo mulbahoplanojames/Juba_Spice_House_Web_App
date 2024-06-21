@@ -1,4 +1,5 @@
 // Import the assets object from the data/assets file
+import { Link } from "react-router-dom";
 import { assets } from "../../data/assets";
 
 // Define a functional component called Header
@@ -15,9 +16,11 @@ const Header = () => {
 						Place your favorite food order here
 					</h1>
 					<p className='text-lg pb-6'>{assets.headerText}</p>
-					<button className='bg-primary text-text_light font-bold py-3 px-6 rounded-3xl hover:bg-yellow-200 transition-all duration-300'>
-						View Menu
-					</button>
+					<Link to={"/menu"}>
+						<button className='bg-primary text-text_light font-bold py-3 px-6 rounded-3xl hover:bg-yellow-200 transition-all duration-300'>
+							View Menu
+						</button>
+					</Link>
 				</div>
 			</div>
 		</>

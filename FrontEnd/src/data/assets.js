@@ -1,5 +1,7 @@
 import basket_icon from "/src/assets/basket_icon.png";
 import search_icon from "/src/assets/search_icon.png";
+import contact_3d from "/src/assets/contact_3d_phone.png";
+import contact_3d_message from "/src/assets/contact_3d_message.png";
 import box_3d from "/src/assets/3d_box.png";
 import menu_1 from "/src/assets/menu_1.png";
 import menu_2 from "/src/assets/menu_2.png";
@@ -84,6 +86,8 @@ export const assets = {
 	parcel_icon,
 	headerText,
 	box_3d,
+	contact_3d,
+	contact_3d_message,
 };
 
 export const menu_list = [

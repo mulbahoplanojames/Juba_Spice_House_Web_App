@@ -17,7 +17,7 @@ import Header from "../../Components/Header/Header";
  * This component contains the food items on the home page that is order in a card layout.
  */
 import FoodDsiplay from "../../Components/Food_Display/FoodDsiplay";
-import CallToAction from "../../Call_To_Action/CallToAction";
+import CallToAction from "../../Components/Call_To_Action/CallToAction";
 
 const Home = () => {
 	/*

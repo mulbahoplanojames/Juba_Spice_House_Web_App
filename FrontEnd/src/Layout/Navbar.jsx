@@ -7,7 +7,7 @@ import { assets } from "../data/assets";
 
 /**
  * The Navbar component renders the navigation bar of this website.
- * It contains links to different pages and a contact us button.
+ * It contains links to different pages and a sign in button.
  * It also has a responsive menu for smaller devices.
  */
 const Navbar = () => {

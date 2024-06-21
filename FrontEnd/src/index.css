@@ -26,3 +26,12 @@
 #explore_menu_list::-webkit-scrollbar {
 	display: none;
 }
+
+#newsletter {
+	background-image: linear-gradient(
+			to top,
+			rgba(0, 0, 0, 0.4),
+			rgba(0, 0, 0, 0.4)
+		),
+		url("/src/assets/header_img-bg.png");
+}

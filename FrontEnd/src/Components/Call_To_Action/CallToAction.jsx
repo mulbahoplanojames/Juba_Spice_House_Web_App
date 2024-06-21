@@ -1,6 +1,7 @@
 // Importing the assets object from the data/assets file. This object contains various
 // assets used in the component such as the box_3d image.
-import { assets } from "../data/assets";
+
+import { assets } from "../../data/assets";
 
 // Defining a functional component called CallToAction. It is responsible for rendering
 // the call to action section of the webpage.
