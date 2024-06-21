@@ -19,7 +19,7 @@ const FoodDsiplay = ({ category }) => {
 
 	return (
 		<>
-			<div className='mt-8'>
+			<div className='mt-8 mb-14'>
 				<h1 className='pb-6 text-2xl'>Top dishes near you</h1>
 
 				{/* Adding a grid layout with 4 columns for large devices, 2 columns for medium devices, 

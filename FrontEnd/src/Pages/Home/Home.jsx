@@ -17,6 +17,7 @@ import Header from "../../Components/Header/Header";
  * This component contains the food items on the home page that is order in a card layout.
  */
 import FoodDsiplay from "../../Components/Food_Display/FoodDsiplay";
+import CallToAction from "../../Call_To_Action/CallToAction";
 
 const Home = () => {
 	/*
@@ -33,6 +34,8 @@ const Home = () => {
 			<ExploreMenu category={category} setCategory={setCategory} />
 			{/* Rendering the FoodDsiplay component and passing the category as props */}
 			<FoodDsiplay category={category} />
+			{/* Rendering the CallToAction component */}
+			<CallToAction />
 		</>
 	);
 };

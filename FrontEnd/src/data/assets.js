@@ -1,7 +1,6 @@
 import basket_icon from "/src/assets/basket_icon.png";
-import logo from "/src/assets/logo.png";
-import header_img from "/src/assets/header_img.png";
 import search_icon from "/src/assets/search_icon.png";
+import box_3d from "/src/assets/3d_box.png";
 import menu_1 from "/src/assets/menu_1.png";
 import menu_2 from "/src/assets/menu_2.png";
 import menu_3 from "/src/assets/menu_3.png";
@@ -66,9 +65,7 @@ const headerText = `Choose from a diverse selection featuring a delectable array
 						a time.`;
 
 export const assets = {
-	logo,
 	basket_icon,
-	header_img,
 	search_icon,
 	rating_starts,
 	add_icon_green,
@@ -86,6 +83,7 @@ export const assets = {
 	bag_icon,
 	parcel_icon,
 	headerText,
+	box_3d,
 };
 
 export const menu_list = [

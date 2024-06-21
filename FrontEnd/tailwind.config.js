@@ -7,6 +7,7 @@ export default {
 				primary: "#f5f5f5",
 				secondary: "#0f0f0f",
 				accent_light: "#f57319",
+				accent_dark: "#1d232a",
 				text_light: "#747474",
 				text_bold: "#262626",
 				yellow_accent_1: "#FCF300",
