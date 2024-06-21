@@ -3,7 +3,7 @@ import { assets } from "../../data/assets";
 const ContactHeader = () => {
 	return (
 		<>
-			<div className='md:h-[50vh] h-[40vh] text-center lg:px-56 px-4 text-white bg-yellow_accent_3 flex justify-center items-center flex-col relative rounded-md mb-16'>
+			<div className='md:h-[50vh] h-[40vh] text-center lg:px-56 px-4 text-white bg-yellow_accent_3 flex justify-center items-center flex-col relative rounded-md mb-16 mt-6'>
 				<h1 className='md:text-6xl text-4xl pb-4 uppercase font-bold'>
 					Contact Us
 				</h1>
